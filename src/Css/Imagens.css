@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #eee;
+    font-size: 12px;
+}
+
+header {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    font-size: 1.3em;
+}
+
+header a {
+    color: #eee;
+    margin-right: 20px;
+    font-weight: 900;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin-top: -50px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.container .list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container .list .list-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.container .list .list-item img {
+    object-fit:cover;
+    width: 90%;
+    height: 90%;
+    filter: brightness(50%);
+    margin-top: 80px;
+    margin-left: 5%;
+}
+
+.container .list .list-item .content {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    padding-right: 10%;
+    width: 80%;
+    color: #eee;
+    text-shadow: 0 5px 10px #0004;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.container .list .list-item:hover .content {
+    opacity: 1;
+}
+
+.container .list .list-item .description {
+    font-size: 1.4em;
+}
+
+.container .thumb {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    display: flex;
+    gap: 1px;
+}
+
+.container .thumb .thumb-item {
+    width: 80px;
+    height: 100px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.container .thumb .thumb-item img {
+    width: 60%;
+    height: 60%;
+    filter: brightness(80%);
+    object-fit: cover;
+}
+
+.container .arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 3;
+}
+
+.container .arrows button {
+    border-radius: 50%;
+    border: none;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #eee;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.4em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container .arrows button:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+.container.next .arrows .prev {
+    visibility: hidden;
+}
+
+.container.back .arrows .next {
+    visibility: hidden;
+}
+
+.container .arrows .next {
+    right: 0;
+}

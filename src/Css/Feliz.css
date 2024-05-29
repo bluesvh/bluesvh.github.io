@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    font-size: 20px;
+    width: 198vh;
+    height: 288vh;
+    background: linear-gradient(#ff0000 0%, #000000 100%);
+}
+
+.container {
+    position:relative;
+    align-items:center;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 40px;
+    animation: slideContent .5s linear .5s backwards;
+}
+@keyframes slideContent{0%
+    {
+        opacity:0;
+        transform: translateX(-50px);
+    }
+}
+
+.container h2 {
+    font-size: 25px;
+    animation: slideContent .5s linear .5s backwards;
+}
+@keyframes slideContent{0%
+    {
+        opacity:0;
+        transform: translateX(-50px);
+    }
+}
+
+.container p {
+    font-size: 25px;
+    color: #fff;
+    animation: slideContent .6s linear .6s backwards;
+}
+
+@keyframes slideContent{0%
+    {
+        opacity:0;
+        transform: translateX(-50px);
+    }
+}
+.text p {
+    font-size: 25px;
+    color: white;
+    text-indent: 50px;
+    animation: slideContent .6s linear .6s backwards;
+}
+
+@keyframes slideContent{0%
+    {
+        opacity:0;
+        transform: translateX(-50px);
+    }
+}
+
+.container #navbar {
+    mix-blend-mode: multiply;
+    width: 40%;   
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideContent .2s linear .2s backwards;
+}
+
+@keyframes slideContent{0%
+    {
+        opacity:0;
+        transform: translateX(-50px);
+    }
+}
+
+.container #navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.raiva{
+    width: 200px;
+    height: 240px;
+}
+
+img {
+    animation: slideContent .4s linear .4s backwards;
+}
+@keyframes slideContent{0%
+    {
+        opacity:0;
+        transform: translateX(-50px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 25%;
+        height: 50%;
+       max-width: 3000px;
+    }
+    img{
+       max-width: 100%;
+       height: auto;
+    }
+    .elemento-oculto {
+       display: none;
+    }
+    .text p {
+        width: 25%;
+        max-width: 3000px;
+        margin-left: 8px;
+        margin-right: 15px;
+    }
+    body{
+        font-size: 20px;
+        width: 390%;
+        height: 90%;
+        background: linear-gradient(#ff0000 0%, #000000 100%);
+    }
+}
+ 
